@@ -1,0 +1,16 @@
+<ion-view view-title="Products">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="product in products.catalog" type="item-text-wrap" href="#/tab/chats/{{product.id}}">
+        <img ng-src="{{product.image}}">
+        <h2>{{product.name}}</h2>
+        <p>Code: {{product.cde}}, price: {{product.price}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(product)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
