@@ -1,0 +1,29 @@
+<h2>Products List</h2>
+<div class="table-responsive">
+<table class="table table-striped">
+
+ <thead>
+   <tr>
+     <th>Nombre</th>
+     <th>Cantidad</th>
+     <th>Codigo</th>
+     <th>Descripcion</th>
+     <th>Precio</th>
+     <th>Edit</th>
+    </tr>
+   </thead>
+
+    <tbody></tbody>
+     <tr ng-repeat="product in list.products">
+      <td> {{product.name}}</td>
+      <td> {{product.quantity}}</td>
+      <td>{{product.cde}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.price}}</td>
+      <td><a ng-href="#/product/{{product.$id}}">Edit</a> </td>
+     </tr>
+    </tbody> 
+
+</table>
+
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="products">
+<head>
+	<title>NG-Route</title>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="bower_components/firebase/firebase.js"></script>
+	<script src="bower_components/angularfire/dist/angularfire.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers.js"></script>
+	<script src="factories.js"></script>
+	<!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	    	<a class="navbar-brand" ng-href="#/">Home</a>
+	       <a class="navbar-brand" href="#/products">
+	      Lista de productos
+	      </a>
+	      <a class="navbar-brand" ng-href="#/new">Nuevo Producto</a>
+	    </div>
+	  </div>
+	</nav>
+	
+	<br>
+	<br>
+	<br>
+	<div ng-view></div>
+	<br>
+	<br>
+	<br>
+<!--	<nav>
+		<a ng-href="#/">Home</a>
+		<br>
+		<a ng-href="#/products">Products</a>
+		<br>
+		<a ng-href="#/new">New Product</a>
+	</nav> -->
+</body> 
+</html>
